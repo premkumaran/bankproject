@@ -1,0 +1,50 @@
+<div>
+  <ul>
+    <input type="button" value="Logout" (click)="logout()">
+  </ul>
+</div>
+
+<br>
+
+<div>
+  <td>User Details</td>
+  <td class="search">Search</td>
+  <td class="search"><input type="text" placeholder="filter the text" [(ngModel)]="textsearch"> </td>
+  <td *ngIf="isuser" class="add"><a routerLink="/addusers">Addusers</a></td>
+  <td class="user"> <a routerLink="/adddetails"> Adddetails</a> </td>
+</div>
+
+<br>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th> Particular </th>
+        <th> Credit </th>
+        <th> Debit </th>
+        <th>Date</th>
+        <th>File</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let b of Bankstates">
+        <td> {{b.Particular}}</td>
+        <td><span *ngIf="b.Type=='true'?true:false"> {{b.Amount}} </span>
+          <span *ngIf="!(b.Type=='true'?true:false)">-</span>
+        </td>
+        <td> <span *ngIf="!(b.Type=='true'?true:false)"> {{b.Amount}} </span>
+          <span *ngIf="b.Type=='true'?true:false">-</span>
+        </td>
+        <td>{{b.Date}}</td>
+        <td>{{b.FileUpload}}</td>
+      </tr>
+      <tr>
+        <td> <b>Total</b></td>
+        <td><b>{{bank('true')}}</b></td>
+        <td><b>{{bank('false')}}</b></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

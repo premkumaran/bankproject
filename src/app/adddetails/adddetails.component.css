@@ -1,0 +1,48 @@
+ul {
+    display:block;
+    text-align: end;
+    margin: 0;
+    padding: 2.5%;
+    background-color: #2fac9f;
+  }
+.cont{
+    margin-top: 4%;
+    width: 40%;
+    box-sizing: border-box;
+     /* border: 2px solid; */
+     margin-left: 400px;
+     background-color: #8ac8c2;
+     border-radius: 20px;
+    
+}
+input[type=text], input[type=date],input[type=number]{
+    width: 50%;
+    padding: 8px;
+    margin: 3%;
+    margin-left: 30px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width:70%;
+  }
+  input[type=button]{
+    padding: 8px;
+    margin: 3%;
+    margin-left: 80px;
+    width:40%;
+    background-color:#02a595 ;
+  }
+  input[type=radio]{
+    width: 20%;
+    padding: 8px;
+    margin: 3%;
+    margin-left: 30px;
+    width:5%;
+  }
+  input[type=file]{
+    width: 20%;
+    padding: 8px;
+    margin: 3%;
+    margin-left: 30px;
+    width:100%;
+  }

@@ -1,0 +1,37 @@
+<div>
+  <ul>
+  </ul>
+</div>
+
+<table class="cont">
+    <tr>
+        <td>Date : </td>
+        <td><input type="date" [(ngModel)]="detail.Date"></td>
+      </tr>
+      <br>
+    <tr>
+      <td>Particular : </td> 
+      <td><input type="text" [(ngModel)]="detail.Particular"></td>
+    </tr>
+    <br>
+    <tr>
+      <td>Amount : </td>
+      <td><input type="number" [(ngModel)]="detail.Amount"></td>
+    </tr>
+    <br>
+    <tr>
+      <td>Transaction Type : </td>
+      <td><input type="radio" name="transaction" value="true" [(ngModel)]="detail.Type">Credit
+      <input type="radio" name="transaction" value="false" [(ngModel)]="detail.Type">Debit</td>
+    </tr>
+    <br>
+    <tr>
+        <td>File Upload : </td>
+        <input type="file" id="myfile" name="myfile" [(ngModel)]="detail.FileUpload" >
+    </tr>
+    <br>
+    <tr>
+        <td></td>
+      <td><input type="button" value="Add" (click)="Add()"></td>
+    </tr>
+</table>

@@ -1,0 +1,37 @@
+<div>
+<td>
+  Home
+</td>
+
+</div>
+<div >
+  <img src="/assets/images2.jpeg" class="maincontainer">
+<div class="container">
+    <h5><b>Username</b></h5>
+    <input type="text" placeholder="Enter Username" [(ngModel)]="Username" (click)="showToasterError()">
+      <br>
+    <h5><b>Password</b></h5>
+    <input type="password" placeholder="Enter Password" [(ngModel)]="Password" (click)="showToasterError()" >
+      <br>
+    <button type="button" (click)="login()">Login</button>
+    
+  </div>
+</div>
+
+<h1>Angular 12 Toastr Notifications Example - Tutsmake.com</h1>
+<br>
+<button (click)="showToasterSuccess()">
+  Success Toaster
+</button>
+
+<button (click)="showToasterError()">
+  Error Toaster
+</button>
+
+<button (click)="showToasterInfo()">
+  Info Toaster
+</button>
+
+<button (click)="showToasterWarning()">
+  Warning Toaster
+</button>

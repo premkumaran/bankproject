@@ -1,0 +1,28 @@
+.admincontainer{
+    position: absolute;
+    background-image: url("/src/assets/images2.jpeg");
+    background-position:cover;
+    height: 100%;
+    width: 100%;
+    margin-top: -.5%;
+    /* margin-left: -.5%;
+    margin-right: .5%; */
+   }
+ul {
+    display:block;
+    text-align: end;
+    margin: 0;
+    padding: 1.5%;
+    background-color: #67ccc2;
+  }
+  
+.search{
+    padding-left: 60%;
+    
+}
+.add{
+    padding-left:100%;
+} 
+.user{
+    padding-left:150%;
+}

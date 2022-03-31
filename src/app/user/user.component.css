@@ -1,0 +1,11 @@
+ul {
+    display:block;
+    text-align: end;
+    margin: 0;
+    padding: 1.5%;
+    background-color: #8ac8c2;
+  }
+  
+.search{
+    padding-left: 90%;
+}

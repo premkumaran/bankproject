@@ -1,0 +1,26 @@
+<div>
+    <ul>
+    </ul>
+</div>
+
+<div class="cr">
+    <tr>
+        <td>Username:</td>
+        <td><input type="text" [(ngModel)]="addusers.Username"> </td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td><input type="Password" [(ngModel)]="addusers.Password"> </td>
+    </tr>
+    <tr>
+        <td>User Type:</td>
+        <td><select class="d" value="user" disabled [(ngModel)]="addusers.Usertype">
+                <option value="user">User</option>
+            </select>
+        </td>
+        <br>
+
+    </tr>
+    <input type="button" value="Add" (click)="Add()">
+
+</div>

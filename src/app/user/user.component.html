@@ -1,0 +1,31 @@
+<div>
+    <ul>
+        <a routerLink="/admin">Exit</a>
+    </ul>
+    
+    </div>
+<br>
+<div>
+    <td>User Details</td>
+    <td class="search">Search</td>
+    <td class="search"><input type="text" placeholder="filter the text" [(ngModel)]="textsearch">  </td>   
+</div>
+<br>
+<div class="table-responsive">
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Username</th>
+                <th>Usertype</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let m of Userdetails | username:textsearch">
+                <td>{{m.Username}}</td>
+                <td>{{m.Usertype}}</td>
+                <td>{{m.Password}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
